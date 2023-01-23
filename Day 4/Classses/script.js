@@ -13,9 +13,9 @@ class Person {
   }
 
   eat(meals){
-    if (meals == 3) console.log("100% health rate");
-    else if (meals == 2) console.log("75% health rate");
-    else if (meals == 1) console.log("50% health rate");
+    if (meals == 3) healthRate = 100;
+    else if (meals == 2) healthRate = 75;
+    else if (meals == 1) healthRate = 50;
   }
 
   buy(itemNumber)
