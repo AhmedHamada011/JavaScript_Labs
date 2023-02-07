@@ -1,12 +1,13 @@
 
-function login(elem){
 
-  elem.preventDefault;
+var sub = document.getElementById("submit");
+
+sub.addEventListener("click",function(event){
+
+  event.preventDefault();
   let myModal = new bootstrap.Modal(document.getElementById("myModal"), {
     keyboard: false,
   });
-
-
 
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
@@ -25,6 +26,12 @@ function login(elem){
     modalBody.innerHTML = "Sorry, you are not registered"
     myModal.show();
   }
+
+});
+
+function login(elem){
+
+  
 
   
 }

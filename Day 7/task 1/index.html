@@ -45,44 +45,43 @@
                   <p class="text-white-50 mb-5">
                     Please enter your login and password!
                   </p>
+                  <form action="">
+                    <div class="form-floating form-white mb-4">
+                      <input
+                        type="email"
+                        id="email"
+                        class="form-control form-control-lg"
+                        placeholder="name@example.com"
+                      />
+                      <label class="form-label" for="email" style="color: black"
+                        >Email</label
+                      >
+                    </div>
 
-                  <div class="form-floating form-white mb-4">
-                    <input
-                      type="email"
-                      id="email"
-                      class="form-control form-control-lg"
-                      placeholder="name@example.com"
-                    />
-                    <label
-                      class="form-label"
-                      for="email"
-                      style="color: black"
-                      >Email</label
+                    <div class="form-floating form-white mb-4">
+                      <input
+                        type="password"
+                        id="password"
+                        class="form-control form-control-lg"
+                        placeholder="password"
+                      />
+                      <label
+                        class="form-label"
+                        for="password"
+                        style="color: black"
+                        >Password</label
+                      >
+                    </div>
+
+                    <button
+                      class="btn btn-outline-light btn-lg px-5"
+                      type="submit"
+                      id="submit"
+                      onclick="login()"
                     >
-                  </div>
-
-                  <div class="form-floating form-white mb-4">
-                    <input
-                      type="password"
-                      id="password"
-                      class="form-control form-control-lg"
-                      placeholder="password"
-                    />
-                    <label
-                      class="form-label"
-                      for="password"
-                      style="color: black"
-                      >Password</label
-                    >
-                  </div>
-
-                  <button
-                    class="btn btn-outline-light btn-lg px-5"
-                    type="submit"
-                    onclick="login(this)"
-                  >
-                    Login
-                  </button>
+                      Login
+                    </button>
+                  </form>
                 </div>
 
                 <div>
