@@ -1,0 +1,12 @@
+@font-face {
+  font-family: digital;
+  src: url(fonts/digital-7.ttf);
+}
+
+#clock{
+  font-family: digital;
+  letter-spacing:5px;
+  line-height: 1;
+  font-size: 80px;
+}
+

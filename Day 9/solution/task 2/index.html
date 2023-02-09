@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: #e8f6fd">
+    <div class="container-fluid d-flex flex-column vh-100">
+      <div
+        class="watch-body h-50 d-flex flex-column align-items-center justify-content-center"
+        style="background-color: aliceblue"
+      >
+        <div
+          class="watch-outer-body p-4 shadow rounded-3 w-50"
+          style="background-color: whitesmoke"
+        >
+          <div
+            class="watch-inner-body p-3 d-flex flex-column rounded-3 border border-1 border-dark"
+            style="background-color: rgb(218, 217, 217)"
+          >
+            <div class="days d-flex justify-content-around">
+              <small class="opacity-50 day">Sat</small>
+              <small class="opacity-50 day">Sun</small>
+              <small class="opacity-50 day">Mon</small>
+              <small class="opacity-50 day">Tus</small>
+              <small class="opacity-50 day">Wed</small>
+              <small class="opacity-50 day">Thu</small>
+              <small class="opacity-50 day">Fri</small>
+            </div>
+            <div
+              class="clock-container mt-2 d-flex justify-content-center align-content-between"
+            >
+              <div class="clock" id="clock"></div>
+              <div id="postfix" class="align-self-end ms-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <h1 class=" mt-5">Digital Clock</h1>
+      </div>
+      <div
+        class="alarm-body d-flex align-items-center justify-content-center" style="background-color: rgb(164, 162, 162);"
+      >
+        <div class="alarm-container p-5" >
+          <div class="alarm-container rounded-3 p-4 d-flex flex-column justify-content-center align-content-between bg-white" >
+            <div class="title mb-4">
+              <h4 class="text-uppercase text-center">set alarm after</h4>
+            </div>
+            <div class="counters d-flex align-content-center justify-content-between">
+              <div class="hours w-25 bg-body-secondary p-3 rounded-1">
+                <p class="text-center fw-bold">Hours</p>
+                <input type="number" value="0" max="60"  min="0" id="hours" class="form-control">
+              </div>
+
+              <div class="minutes w-25 bg-body-secondary p-3 rounded-1">
+                <p class="text-center fw-bold">Minutes</p>
+                <input type="number" value="0" max="60"  min="0" id="minutes" class="form-control">
+              </div>
+
+              <div class="seconds w-25 bg-body-secondary p-3 rounded-1">
+                <p class="text-center fw-bold">Seconds</p>
+                <input type="number" value="0" max="60"  min="0" id="seconds" class="form-control">
+              </div>
+
+            </div>
+            <div class="mt-5 controls d-flex justify-content-center">
+              <div class="set me-3">
+                <button class="btn btn-primary" id="set">Set</button>
+              </div>
+              <div class="clear">
+                <button class="btn btn-danger" id="clear">Clear</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
