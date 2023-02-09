@@ -13,14 +13,15 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body style="background-color: #e8f6fd">
     <div class="container-fluid d-flex flex-column vh-100">
       <div
-        class="watch-body h-50 d-flex flex-column align-items-center justify-content-center"
+        class="watch-body row flex-column align-items-center justify-content-center"
         style="background-color: aliceblue"
       >
         <div
-          class="watch-outer-body p-4 shadow rounded-3 w-50"
+          class="watch-outer-body p-4 shadow rounded-3 col-12 col-md-6"
           style="background-color: whitesmoke"
         >
           <div
@@ -44,29 +45,33 @@
             </div>
           </div>
         </div>
-        
-        <h1 class=" mt-5">Digital Clock</h1>
+
+        <div class="col-12 col-md-12 text-center">
+          <h1 class="my-5">Digital Clock</h1>
+        </div>
+  
       </div>
+
       <div
-        class="alarm-body d-flex align-items-center justify-content-center" style="background-color: rgb(164, 162, 162);"
+        class="alarm-body row align-items-center justify-content-center" style="background-color: rgb(164, 162, 162);"
       >
-        <div class="alarm-container p-5" >
+        <div class="alarm-container p-4 col-12 col-md-6" >
           <div class="alarm-container rounded-3 p-4 d-flex flex-column justify-content-center align-content-between bg-white" >
             <div class="title mb-4">
               <h4 class="text-uppercase text-center">set alarm after</h4>
             </div>
-            <div class="counters d-flex align-content-center justify-content-between">
-              <div class="hours w-25 bg-body-secondary p-3 rounded-1">
+            <div class="counters row g-2 align-content-center justify-content-between">
+              <div class="hours col-3 bg-body-secondary p-3 rounded-1">
                 <p class="text-center fw-bold">Hours</p>
                 <input type="number" value="0" max="60"  min="0" id="hours" class="form-control">
               </div>
 
-              <div class="minutes w-25 bg-body-secondary p-3 rounded-1">
+              <div class="minutes col-3 bg-body-secondary p-3 rounded-1">
                 <p class="text-center fw-bold">Minutes</p>
                 <input type="number" value="0" max="60"  min="0" id="minutes" class="form-control">
               </div>
 
-              <div class="seconds w-25 bg-body-secondary p-3 rounded-1">
+              <div class="seconds col-3 bg-body-secondary p-3 rounded-1">
                 <p class="text-center fw-bold">Seconds</p>
                 <input type="number" value="0" max="60"  min="0" id="seconds" class="form-control">
               </div>
