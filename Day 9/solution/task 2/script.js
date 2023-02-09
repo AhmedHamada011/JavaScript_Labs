@@ -2,7 +2,7 @@ var clock = document.getElementById("clock");
 var postfix = document.getElementById("postfix");
 var set = document.getElementById("set");
 var clear = document.getElementById("clear");
-
+var alarmSound;
 window.onload = function () {
   setInterval(function () {
     var time = new Date();
@@ -28,15 +28,21 @@ function getFullDay(day) {
 }
 
 set.addEventListener("click", function () {
+  alert("Alarm Started...")
+
   var hours = Number(document.getElementById("hours").value);
   var minutes = Number(document.getElementById("minutes").value);
   var seconds = Number(document.getElementById("seconds").value);
 
   var milliseconds = (hours * 60 * 60 + minutes * 60 + seconds) * 1000;
 
-  console.log(milliseconds);
-  setTimeout(function () {
+  alarmSound = setTimeout(function () {
     var audio = new Audio("sound/alarm.wav");
     audio.play();
   }, milliseconds);
+});
+
+clear.addEventListener("click", () => {
+  alert("Alarm stopped...")
+  clearTimeout(alarmSound);
 });
